@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    border: 2px solid #000;
+    background-color: lightblue;
+    
+}
+.container .item {
+    border: 2px solid navy;
+    background-color: lavender;
+}
+.container {
+    display: flex;
+}
+.container .item:nth-child(1) {
+    width: 200px;
+    flex-shrink: 0; /* 줄어들지마라 */
+}
+.container .item:nth-child(2) {
+    flex-grow: 1; /* 기본값은 0 (늘어나지 않음) 즉 값이 1이면 늘어남 */
+}
+

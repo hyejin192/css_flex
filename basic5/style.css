@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    border: 2px solid #000;
+    background-color: lightblue;
+    
+}
+.container .item {
+    border: 2px solid navy;
+    background-color: lavender;
+}
+.container {
+    display: flex;
+}
+.container .item {
+    /* 화면의 크기에 맞게 줄어든다(늘어나지 못함 float랑 다름) */
+    flex-basis: auto; /* 기본값 == flex-grow:0 , flex-shrink:1 */
+    /* flex-basis: 100px; 유연한 성질을 가지고 있음 */
+    width: 100px;
+    /* 늘어나라 */
+    flex-grow: 0; /* 0 = false, 0을 제외한 나머지 숫자 = true; */
+    flex-grow: 1; /* 값이 0이 아니기 때문에 화면을 늘릴 수록 계속 늘어남 */
+    /* 줄어들어라 */
+    flex-shrink: 0; /* 0을 적음으로서 줄어들지 말라고 했기 때문에 지정한 넓이에서 더이상 줄어들지 않음 */
+    flex-shrink: 1; /* 기본값! 값이 0이 아니기 때문에 지정한 넓이값보다 더 줄어들 수 있지만 자신이 가지고 있는 텍스트영역까지만 줄어들 수 있다. */
+}

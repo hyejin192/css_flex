@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    border: 2px solid #000;
+    background-color: lightblue;
+}
+.container .item {
+    border: 2px solid navy;
+    background-color: lavender;
+
+}
+.container {
+    display: flex;
+    height: 100vh;
+
+    /* 메인 축 방향으로 이동 */
+    justify-content: flex-start; /* 기본 값 오른쪽을 기준으로 붙어있음 */
+    justify-content: center; 
+    justify-content: space-between;/* 아이템 사이에만 간격을 줌 */
+    justify-content: space-around; /* 아이템 각자에게 양옆으로 동일한
+    간격을 줌 */
+    justify-content: space-evenly; /* 아이템 각자에게 동일한 간격을
+    주되 양끝에 균일한 간격을 줌 (겹치는 간격은 하나로 처리) */
+
+    /* 메인 축과 크로즈방향으로 이동(오뎅 먹는 방향) */
+
+    align-items: stretch; /* 기본값(부모의 높이 값을 따라감) */
+    align-items: center;
+    align-items: flex-start; /* 아이템을 시작점으로 정렬 
+    flex-delection이 row(가로배치)일 땐 아래, column(세로)일 땐 오른쪽*/
+    align-items: flex-end; /* 아이템을 끝으로 정렬 */
+}
+.container .item {
+    width: 200px;
+}

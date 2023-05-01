@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    border: 2px solid #000;
+    background-color: lightblue;
+    display: flex;
+    /* display: inline-flex; 부모도 자식의 넓이만큼 차지함 */
+    flex-direction: row; /* 기본값 오른쪽부터 1,2,3 */
+    /* flex-direction: column; 수직으로 축이 생김 위에서부터 1,2,3*/
+    /* flex-direction: row-reverse; 기본값을 거꾸로  왼쪽부터 1,2,3*/
+    /*flex-direction: column-reverse;  수직으로 축이 생기는 게 거꾸로됨 위에서부터 3,2,1 */
+
+    /* 줄넘김 처리 */
+    flex-wrap: wrap; /* 줄 바꿈을 한다 */
+    /* wrap-reverse : 줄 바꿈을 하지만 아이템을 역순으로 배치 */
+
+    /* 메인 축 방향과 줄넘김 축약형 */
+    /* flex-flow : flex-direction(방향)과 fles-wrap을 한번에 
+    지정할 수 있는 단축 속성 */
+    flex-flow: row wrap;
+
+}
+.container .item {
+    border: 2px solid navy;
+    background-color: lavender;
+    width: 40%;
+}

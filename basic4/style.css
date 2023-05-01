@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    border: 2px solid #000;
+    background-color: lightblue;
+
+}
+.container .item {
+    border: 2px solid navy;
+    background-color: lavender;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap; /* 넘치는 요소를 줄바꿈 시킴 */
+    height: 100vh;
+    align-content: center;
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: space-evenly;
+}
+.container .item {
+    width: 30%;
+    height: 100px;
+}

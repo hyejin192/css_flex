@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    border: 2px solid #000;
+    background-color: lightblue;
+    width: 500px; height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .item {
+    border: 2px solid navy;
+    background-color: lavender;
+    width: 200px; height: 200px;
+
+
+}
+.container {}
+.container .item {}
